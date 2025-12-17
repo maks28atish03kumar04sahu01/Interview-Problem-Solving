@@ -135,3 +135,83 @@
 3. Perform The Required Relational Operations Using If Else Conditions
 
 4. Print the results.
+ 
+## 11. USER INPUT IN PROGRAMMING LANGUAGES
+
+1. create `main()` function.
+
+2. Took Different Types Of Input like `int`, `float`, `String`, `Boolean`
+
+3. Print those values using `System.out.println()`
+
+## 12. PRINT WHETHER THE NUMBER IS POSITIVE, NEGATIVE OR ZERO
+
+1. create a `main()` function.
+
+2. Take Input `ip` using `Scanner` class.
+
+```
+if(ip > 0) {
+    print(ip is positive)
+} else if(ip < 0) {
+    print(ip is negative)
+} else {
+    print(ip is zero)
+}
+```
+## 13. PRINT WHETHER THE NUMBER IS EVEN OR ODD
+
+1. create a `main()` function.
+
+2. Take input `ip` using `Scanner` class.
+
+```
+if(ip % 2 == 0) {
+    print(ip is even number)
+} else {
+    print(ip is odd number)
+}
+```
+
+## 14. PRINT THE LARGEST NUMBER BETWEEN TWO NUMBERS
+
+1. create a `main()` function.
+
+2. take two input `ip1` and `ip2` using scanner class.
+
+```
+// PART 01
+if(ip1 > ip2) {
+    print(ip1 greater than ip2)
+} else {
+    print(ip2 greater than ip1)
+}
+```
+
+```
+// PART 02
+String res = (ip1 > ip2) ? "ip1 greater than ip2" : "ip2 greater than ip1";
+print(res)
+```
+
+## 15. PRINT THE LARGEST NUMBER BETWEEN THREE NUMBERS
+
+1. create a `main()` function.
+
+2. take three input `ip1`, `ip2`, `ip3` using scanner class.
+
+```
+if(ip1 > i2 && ip1 > ip3) {
+    print(ip1 greatest between three number)
+} else if(ip2 > ip1 && ip2 > ip3) {
+    print(ip2 greatest between three number)
+} else {
+    print(ip3 greatest between three number)
+}
+```
+
+```
+int greatest = (ip1 > ip2 && ip1 > ip3) ? ip1 : (ip2 > ip1 && ip2 > ip3) ? ip2 : ip3
+print(greatest is the greatest number between three number)
+```
+
