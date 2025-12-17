@@ -215,3 +215,132 @@ int greatest = (ip1 > ip2 && ip1 > ip3) ? ip1 : (ip2 > ip1 && ip2 > ip3) ? ip2 :
 print(greatest is the greatest number between three number)
 ```
 
+## 16. PRINT NUMBERS FROM 0 TO N USING ANY LOOPING TECHNIQUE
+
+1. create `main()` function.
+
+2. take input `range` by using scanner class.
+
+```
+for(int i = 0; i <= range; i++) {
+    print(i)
+}
+```
+
+## 17. PRINT NUMBERS FROM RANGE1 TO RANGE2 USING ANY LOOPING TECHNIQUE
+
+1. create `main()` function.
+
+2. take 2 input `range1` and `range2` using scanner class.
+
+```
+for(int i = range1; i <= range2; i++) {
+    print(i)
+}
+```
+
+## 18. PRINT EVEN NUMBERS FROM 0 TO N
+
+1. create `main()` function.
+
+2. take input `range` using scanner class.
+
+```
+for(int i = 0; i <= range; i++) {
+    if(i % 2 == 0) {
+        print(i)
+    }
+}
+```
+
+## 19. PRINT ODD NUMBERS FROM 0 TO N
+
+1. create `main()` function.
+
+2. take input `range` using scanner class.
+
+```
+for(int i = 0; i <= range; i++) {
+    if(i % 2 != 0) {
+        print(i)
+    }
+}
+```
+
+## 20. PRINT EVEN NUMBERS FROM RANGE1 TO RANGE2
+
+1. create `main()` function.
+
+2. take 2 input `range1` and `range2` using scanner class.
+
+```
+for(int i = range1; i <= range2; i++) {
+    if(i % 2 == 0) {
+        print(i)
+    }
+}
+```
+
+## 21. PRINT ODD NUMBERS FROM RANGE1 TO RANGE2
+
+1. create `main()` function.
+
+2. take 2 input `range1` and `range2` using scanner class.
+
+```
+for(int i = range1; i <= range2; i++) {
+    if(i % 2 != 0) {
+        print(i)
+    }
+}
+```
+
+## 22. ARITHMETIC OPERATION CALCULATOR IN PROGRAMMING
+
+1. create `main()` function.
+
+2. take two input `ip1()` and `ip2()`
+
+3. create a `while` loop and give the condition as a `true`
+
+4. take another input called `operation` and take input for (+, -, *, /, %)
+
+5. add a siwtch case and perform the operations like (`+`, `-`, `*`, `/`, `%`)
+
+6. in default case add System.exit(0) so that it will break the while loop and stop the operation.
+
+```
+while (true) {
+        System.out.println("Enter Operation: ");
+        String op = in.next();
+        switch (op) {
+                case "+":
+                    System.out.println("Result: " + (ip1 + ip2));
+                    break;
+                case "-":
+                    System.out.println("Result: " + (ip1 - ip2));
+                    break;
+                case "*":
+                    System.out.println("Result: " + (ip1 * ip2));
+                    break;
+                case "/":
+                    if (ip2 == 0) {
+                        System.out.println("Division by zero not allowed");
+                    } else {
+                        System.out.println("Result: " + (ip1 / ip2));
+                    }
+                    break;
+                case "%":
+                    if (ip2 == 0) {
+                       System.out.println("Modulo by zero not allowed"); 
+                    } else {
+                        System.out.println("Result: " + (ip1 % ip2));
+                    }
+                    break;
+                default:
+                    System.out.println("Invalid Operation! Program Terminated.");
+                    in.close();
+                    System.exit(0);
+        }
+}
+```
