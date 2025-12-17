@@ -1,0 +1,19 @@
+// 33. PRINT THOSE NUMBER FROM RANGE1 TO RANGE2 WHICH ARE DIVISIBLE BY THE GIVEN TARGET
+import java.util.Scanner;
+public class Test33 {
+    public static void main(String args[]) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter Range1 Value: ");
+        int range1 = in.nextInt();
+        System.out.println("Enter Range2 Value: ");
+        int range2 = in.nextInt();
+        System.out.println("Enter Target Value: ");
+        int target = in.nextInt();
+        for(int i = range1; i <= range2; i++) {
+            if(i % target == 0) {
+                System.out.print(i+" ");
+            }
+        }
+        in.close();
+    }
+} 
