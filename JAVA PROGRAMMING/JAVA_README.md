@@ -344,3 +344,255 @@ while (true) {
         }
 }
 ```
+
+## 23. PRINT SUM OF ALL NUMBERS BETWEEN 0 TO N
+
+```
+range = in.nextInt();
+sum = 0
+for(int i = 0; i <= range; i++) {
+    sum += i;
+}
+print(sum);
+```
+
+## 24. PRINT SUM OF ALL NUMBERS BETWEEN RANGE1 TO RANGE2
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+sum = 0;
+for(int i = range1; i <= range2; i++) {
+    sum += i;
+}
+print(sum);
+```
+
+## 25. PRINT SUM OF ALL EVEN NUMBER BETWEEN 0 TO N
+
+```
+range = in.nextInt();
+sum = 0;
+for(int i = 0; i <= range; i++) {
+    if(i % 2 == 0){
+        sum += i
+    }
+}
+print(sum);
+```
+
+## 26. PRINT SUM OF ALL EVEN NUMBER BETWEEN RANGE1 TO RANGE2
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+sum = 0;
+for(int i = range1; i <= range2; i++) {
+        if(i % 2 == 0){
+        sum += i
+    }
+}
+print(sum);
+```
+
+## 27. PRINT SUM OF ALL ODD NUMBER BETWEEN 0 TO N
+
+```
+range = in.nextInt();
+sum = 0;
+for(int i = 0; i <= range; i++) {
+    if(i % 2 != 0){
+        sum += i
+    }
+}
+print(sum);
+```
+
+## 28. PRINT SUM OF ALL ODD NUMBER BETWEEN RANGE1 TO RANGE2
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+sum = 0;
+for(int i = range1; i <= range2; i++) {
+        if(i % 2 != 0){
+        sum += i
+    }
+}
+print(sum);
+```
+
+## 29. PRINT MULTIPLICATION TABLE
+
+```
+input1 = in.nextInt();
+input2 = in.nextInt();
+for(int i = 0; i <= input1; i++) {
+    print(input1 * i);
+}
+```
+
+## 30. PRINT WHETHER THE NUMBER IS DIVISIBLE BY THE GIVEN TARGET OR NOT
+
+```
+ip1 = in.nextInt();
+target = in.nextInt();
+if(ip1 % target == 0) {
+    print(divisible);
+} else {
+    print(not divisible);
+}
+```
+
+## 31. PRINT THOSE NUMBER FROM 0 TO N WHICH ARE DIVISIBLE BY THE GIVEN TARGET
+
+```
+range = in.nextInt();
+target = in.nextInt();
+for(int i = 0; i <= range; i++) {
+    if(i % target == 0) {
+        print(i);
+    }
+}
+```
+
+## 32. PRINT THOSE NUMBER FROM 0 TO N WHICH ARE NOT DIVISIBLE BY THE GIVEN TARGET
+
+```
+range = in.nextInt();
+target = in.nextInt();
+for(int i = 0; i <= range; i++) {
+    if(i % target != 0) {
+        print(i);
+    }
+}
+```
+
+## 33. PRINT THOSE NUMBER FROM RANGE1 TO RANGE2 WHICH ARE DIVISIBLE BY THE GIVEN TARGET
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+target = in.nextInt();
+for(int i = range1; i <= range2; i++) {
+    if(i % target == 0) {
+        print(i);
+    }
+}
+```
+
+## 34. PRINT THOSE NUMBER FROM RANGE1 TO RANGE2 WHICH ARE NOT DIVISIBLE BY THE GIVEN TARGET
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+target = in.nextInt();
+for(int i = range1; i <= range2; i++) {
+    if(i % target != 0) {
+        print(i);
+    }
+}
+```
+
+## 35. PRINT SUM OF THOSE NUMBER FROM 0 TO N WHICH ARE DIVISIBLE BY THE GIVEN TARGET
+
+```
+range = in.nextInt();
+target = in.nextInt();
+sum = in.nextInt();
+for(int i = 0; i <= range; i++) {
+    if(i % target == 0) {
+        sum += i;
+    }
+}
+print(sum);
+```
+
+## 36. PRINT SUM OF THOSE NUMBER FROM 0 TO N WHICH ARE NOT DIVISIBLE BY THE GIVEN TARGET
+
+```
+range = in.nextInt();
+target = in.nextInt();
+sum = in.nextInt();
+for(int i = 0; i <= range; i++) {
+    if(i % target != 0) {
+        sum += i;
+    }
+}
+print(sum);
+```
+
+## 37. PRINT SUM OF THOSE NUMBER FROM RANGE1 TO RANGE2 WHICH ARE DIVISIBLE BY THE GIVEN TARGET
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+target = in.nextInt();
+sum = in.nextInt();
+for(int i = range1; i <= range2; i++) {
+    if(i % target == 0) {
+        sum += i;
+    }
+}
+print(sum);
+```
+
+## 38. PRINT SUM OF THOSE NUMBER FROM RANGE1 TO RANGE2 WHICH ARE NOT DIVISIBLE BY THE GIVEN TARGET
+
+```
+range1 = in.nextInt();
+range2 = in.nextInt();
+target = in.nextInt();
+sum = in.nextInt();
+for(int i = range1; i <= range2; i++) {
+    if(i % target != 0) {
+        sum += i;
+    }
+}
+print(sum);
+```
+
+## 39. PRINT WHETHER THE GIVEN YEAR VALUE IS A LEAP YEAR OR NOT
+
+```
+year = in.nextInt();
+if((year % 4 == 0 && year % 100 == 0) || year % 400 == 0) {
+    print(year is leap year)
+} else {
+    print(year is not leap year)
+}
+```
+
+## 40. FIND YOUR AGE
+```
+import java.time.*;
+
+LocalDate DT = LocalDate.now();
+
+int day = DT.getDayOfMonth();
+int month = DT.getMonthValue();
+int year = DT.getYear();
+
+int your_birthday = in.nextInt();
+int your_birthmonth = in.nextInt();
+int your_birthyear = in.nextInt();
+
+int age = day - your_birthday
+int mon = month - your_birthmonth
+int yr = year - your_birthyear
+
+if(age < 0) {
+    int sol1 = (-1) * (age);
+    print(Day: sol1);
+} else {
+    print(Day: age);
+}
+if(mon < 0) {
+    int sol2 = (-1) * (mon);
+    print(Month: sol2);
+} else {
+    print(Month: mon);
+}
+print(Year: yr);
+```
+
